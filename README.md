@@ -1,2 +1,2 @@
 # 2021_HIV_Env_DMS
-Deep mutational scanning analysis for Nekongo PLOS Path 2021
+Deep mutational scanning analysis of Env in modulated ER proteostasis environments
