@@ -1,1 +1,6 @@
-This folder contains codon counts files for biological replicate 1
+This folder contains the following files for replicate 1
+
+1. bcstats.csv
+2. codoncounts.csv
+3. readsperbc.csv
+4. readstats.csv
