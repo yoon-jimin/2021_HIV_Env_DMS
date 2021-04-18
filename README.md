@@ -12,7 +12,7 @@ This repository is for the project by Jimin Yoon, Emmanuel Nekongo, and Matthew 
 
  * pLAI is used to indicate p0 mutant viral library
 
- * WT is used to indicate wild type Env
+ * WT is used to indicate wild-type Env
 
 ## Analysis
 
