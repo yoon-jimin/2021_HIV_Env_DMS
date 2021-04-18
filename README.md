@@ -4,6 +4,16 @@ Deep mutational scanning analysis for "The host cell's ER proteostasis network p
 
 This repository is for the project by Jimin Yoon, Emmanuel Nekongo, and Matthew Shoulders (https://shoulderslab.mit.edu). This project analyzes the impact of host ER proteostasis network on the mutational tolerance of human immunodeficiency virus (HIV) envelope (Env). The analysis primarily uses [dms_tools2](https://jbloomlab.github.io/dms_tools2/index.html).
 
+## Abbreviations used
+
+ * Mt1, Mt2, and Mt3 are used to indicate biological replicate 1, 2, and 3, respectively
+
+ * D, T, DT, and V are used to indicate dox-treated (+XBP1s), TMP-treated (+ATF6), dox- and TMP-treated (+XBP1s/+ATF6). amd vehicle-treated (Basal) samples
+
+ * pLAI is used to indicate p0 mutant viral libraries
+
+ * WT is used to indicate wild type Env
+
 ## Analysis
 
 ### Calculating codon counts from FASTQ files
