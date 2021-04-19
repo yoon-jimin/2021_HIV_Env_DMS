@@ -15,6 +15,7 @@ This repository is for the project by Jimin Yoon, Emmanuel Nekongo, and Matthew 
  * WT is used to indicate wild-type Env
 
 ## Analysis
+LAI site numberings are used for analysis steps 1, 2, 3. HXB2 site numberings are used for analysis steps 4-1 and 4-2.
 
 ### 1. Calculating codon counts from FASTQ files
 
@@ -45,3 +46,9 @@ This analysis generates the following output data.
  * For each sample: log file, mutdiffsel file, sitediffsel file
 
  * As summary statistics: meanmutdiffsel, meansitediffsel, medianmutdiffsel, mediansitediffsel, absolutesitediffselcorr, maxmutdiffselcorr, mutdiffselcorr, positivesitediffselcorr, meanmaxdiffsel, meanminmaxdiffsel, meanpositivediffsel, meantotaldiffsel, medianmaxdiffsel, medianminmaxdiffsel, medianpositivediffsel, mediantotaldiffsel
+
+### 3. Filtering diffsel
+
+This analysis filters diffsel data in order to decipher reliable signal from experimental noise. Briefly, this analysis (1) removes all mutdiffsel values for variants not present in the starting library of the corresponding replicate, and (2) removes mutdiffsel values that are not of the same sign (positive or negative) across replicates. This analysis is performed by CodonsToAAs/CodonsToAAs.py, FilteringStep1.py, and FilteringStep2.py, which can be found in ./diffsel_data_processing/Filtering.
+
+Details about input/output/code are in each sub-directory.
