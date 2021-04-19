@@ -1,8 +1,8 @@
 # The host cell's ER proteostasis network profoundly shapes the protein sequence space accessible to HIV envelope
 
-Deep mutational scanning analysis for "The host cell's ER proteostasis network profoundly shapes the protein sequence space accessible to HIV Envelope"
+Deep mutational scanning analysis for "The host cell's ER proteostasis network profoundly shapes the protein sequence space accessible to HIV Envelope" (publication info here)
 
-This repository is for the project by Jimin Yoon, Emmanuel Nekongo, and Matthew Shoulders (https://shoulderslab.mit.edu). This project analyzes the impact of host ER proteostasis network on the mutational tolerance of human immunodeficiency virus (HIV) envelope (Env). The analysis primarily uses [dms_tools2](https://jbloomlab.github.io/dms_tools2/index.html).
+This repository is for the project by Jimin Yoon, Emmanuel Nekongo, and Matthew Shoulders (https://shoulderslab.mit.edu). This project analyzes the impact of host ER proteostasis network on the mutational tolerance of human immunodeficiency virus (HIV) envelope (Env). This analysis primarily uses [dms_tools2](https://jbloomlab.github.io/dms_tools2/index.html).
 
 ## Abbreviations used
 
