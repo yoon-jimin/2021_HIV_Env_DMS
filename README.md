@@ -80,3 +80,4 @@ This analysis requires the following input data
 This analysis generates the following output data
 
  * Sequence logo plots for each replicate for each selection vs. mock condition
+
