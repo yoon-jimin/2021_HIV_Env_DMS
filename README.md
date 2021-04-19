@@ -52,3 +52,11 @@ This analysis generates the following output data.
 This analysis filters diffsel data in order to decipher reliable signal from experimental noise. Briefly, this analysis (1) removes all mutdiffsel values for variants not present in the starting library of the corresponding replicate, and (2) removes mutdiffsel values that are not of the same sign (positive or negative) across replicates. This analysis is performed by CodonsToAAs/CodonsToAAs.py, FilteringStep1.py, and FilteringStep2.py, which can be found in ./diffsel_data_processing/Filtering.
 
 Details about input/output/code are in each sub-directory.
+
+### 4-1. Generating logo plots for filtered, averaged diffsel data
+
+This analysis generates sequence logo plots from the filtered diffsel files from Step 3, averaged across biological triplicate. This analysis is performed by ./diffsel_data_processing/Logoplots/SeqLogo.ipynb and primarily uses [dms2_logoplot](https://jbloomlab.github.io/dms_tools2/dms2_logoplot.html).
+
+This analysis requires the following input data.
+
+ * 
