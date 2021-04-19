@@ -34,10 +34,14 @@ This analysis generates the following output data. The output files can be found
 
 ### 2. Calculating differential selection
 
-This analysis calculates [differential selection](https://jbloomlab.github.io/dms_tools2/diffsel.html#diffsel) from codoncounts.csv files. Briefly, differential selection quantifies the relative enrichment of each amino acid substitution at a given site in the selection condition compared to the mock condition. This analysis is performed by analysis_notebook.ipynb and primarily uses [dms2_batch_diffsel](https://jbloomlab.github.io/dms_tools2/dms2_batch_diffsel.html). dms2_batch_diffsel documentation also contains detailed explanation of the output files.
+This analysis calculates [differential selection (diffsel)](https://jbloomlab.github.io/dms_tools2/diffsel.html#diffsel) from codoncounts.csv files. Briefly, differential selection quantifies the relative enrichment of each amino acid substitution at a given site in the selection condition compared to the mock condition. This analysis is performed by analysis_notebook.ipynb and primarily uses [dms2_batch_diffsel](https://jbloomlab.github.io/dms_tools2/dms2_batch_diffsel.html). dms2_batch_diffsel documentation also contains detailed explanation of the output files.
 
 This analysis requires the following input data.
 
  * codoncounts.csv files generated from dms2_batch_bcsubamp. The input files can be found in ./results/codoncounts
 
 This analysis generates the following output data.
+
+ * For each sample: log file, mutdiffsel file, sitediffsel file
+
+ * As summary statistics: meanmutdiffsel, meansitediffsel, medianmutdiffsel, mediansitediffsel, absolutesitediffselcorr, maxmutdiffselcorr, mutdiffselcorr, positivesitediffselcorr, meanmaxdiffsel, meanminmaxdiffsel, meanpositivediffsel, meantotaldiffsel, medianmaxdiffsel, medianminmaxdiffsel, medianpositivediffsel, mediantotaldiffsel
