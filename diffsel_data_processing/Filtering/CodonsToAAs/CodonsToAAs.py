@@ -12,22 +12,21 @@ def main():
     with open(f1) as f:
         for line in f:
             length = length + 1
-    print("Here is the number of lines in the input file")
-    print(str(length) + " (should be 674 for the input file provided)")
+    print("number of lines in the input file: " + str(length) + " (should be 674 for the input file provided)")
     aaCounts = [[0 for i in range(20)] for j in range(length-1)]
+    
+    startaa = 35 ### Env mutagenesis starts at site 35
     
     with open(f1) as f:
         firstLine = f.readline().rstrip().split('\t') # Need to keep this in order to skip first line
         firstLine = "POSITION,WT,K,N,K,N,T,T,T,T,R,S,R,S,I,I,M,I,Q,H,Q,H,P,P,P,P,R,R,R,R,L,L,L,L,E,D,E,D,A,A,A,A,G,G,G,G,V,V,V,V,STOP,Y,STOP,Y,S,S,S,S,STOP,C,W,C,L,F,L,F".split(',')
         ## Comment this out if not needed
-        print("Here is the length of the first line in the input file")
-        print(str(len(firstLine)) + " (should be 66 for the input file provided (2 fields (site and WT amino acid identity) + 64 codons)")
+        print("length of the first line in the input file: " + str(len(firstLine)) + " (should be 66 for the input file provided)" ## 2 fields (site, WT) + 64 codons
         for lineText in f:
             line = lineText.split(',')
-            
             for pos in range(2,len(line)):
                 if(firstLine[pos] != "STOP"):
-                    aaCounts[int(line[0])-1-34][aa2[firstLine[pos]]] += int(line[pos]) ## The 34 is a special case here, because the HIV Env sample begins at 35
+                    aaCounts[int(line[0])-startaa][aa2[firstLine[pos]]] += int(line[pos])
     #print(aaCounts[0])    
     with open(f2,'w') as f:
         for line in aaCounts:
