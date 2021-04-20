@@ -40,7 +40,7 @@ def main():
     with open(dmsdiffsel) as f:
         for line in f:
             diffLength = diffLength + 1
-    diffLength = diffLength/20
+    diffLength = int((diffLength-1)/20)
     
     print("Protein Length: ",diffLength) ### Print length of the protein
        
@@ -52,7 +52,8 @@ def main():
         for textLine in f:
             line = textLine.split(',')
             if(line[0] != 'site'):
-                heatmap[int(line[0])-1][aa2[line[2]]] = float(line[3].rstrip()) 
+                if(line[3].rstrip() != "NaN"):
+                    heatmap[int(line[0])-1-34][aa2[line[2]]] = float(line[3].rstrip()) 
     
     ### Write the unfiltered heatmap
 
