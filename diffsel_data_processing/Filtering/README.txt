@@ -40,6 +40,8 @@ Inputs:
 To run:
 
     python FilteringStep1.py dmsdiffsel.csv AAcountsname.txt heatmapfilename.txt
+    
+########################################
 
 #FilteringStep2.py
 
@@ -58,7 +60,9 @@ Inputs:
 To run:
 
     python FilteringStep2.py heatmap1.txt heatmap2.txt heatmap3.txt pickoutname.txt
+    
+########################################
 
 #FilteredDiffsel
 
-    This folder contains the final pickout.txt files converted to csv files with column titles. This step was performed manually.
+    This folder contains the final pickout.txt files converted to csv files with column titles. In addition, sites were renumbered so that site 0 from the pickout.txt file matches site 35 in LAI numbering. For those sites where no variants survived the filtering, we added the wildtype mutdiffsel back for downstream data analysis. This step was performed manually.
