@@ -12,7 +12,7 @@ def main():
     with open(f1) as f:
         for line in f:
             length = length + 1
-    print("number of lines in the input file: " + str(length) + " (should be 674 for the input file provided)")
+    print("number of lines in the input: " + str(length) + " (674 for the input file provided)")
     aaCounts = [[0 for i in range(20)] for j in range(length-1)]
     
     startaa = 35 ### Env mutagenesis starts at site 35
@@ -21,7 +21,7 @@ def main():
         firstLine = f.readline().rstrip().split('\t') # Need to keep this in order to skip first line
         firstLine = "POSITION,WT,K,N,K,N,T,T,T,T,R,S,R,S,I,I,M,I,Q,H,Q,H,P,P,P,P,R,R,R,R,L,L,L,L,E,D,E,D,A,A,A,A,G,G,G,G,V,V,V,V,STOP,Y,STOP,Y,S,S,S,S,STOP,C,W,C,L,F,L,F".split(',')
         ## Comment this out if not needed
-        print("length of the first line in the input file: " + str(len(firstLine)) + " (should be 66 for the input file provided)" ## 2 fields (site, WT) + 64 codons
+        print("number of columns in the input: " + str(len(firstLine)) + " (66 for the input file provided)") ## 2 fields (site, WT) + 64 codons
         for lineText in f:
             line = lineText.split(',')
             for pos in range(2,len(line)):
