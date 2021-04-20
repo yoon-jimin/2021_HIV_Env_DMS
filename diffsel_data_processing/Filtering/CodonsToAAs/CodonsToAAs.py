@@ -12,14 +12,16 @@ def main():
     with open(f1) as f:
         for line in f:
             length = length + 1
-    print(length)
+    print("Here is the number of lines in the input file")
+    print(str(length) + " (should be 674 for the input file provided)")
     aaCounts = [[0 for i in range(20)] for j in range(length-1)]
     
     with open(f1) as f:
         firstLine = f.readline().rstrip().split('\t') # Need to keep this in order to skip first line
         firstLine = "POSITION,WT,K,N,K,N,T,T,T,T,R,S,R,S,I,I,M,I,Q,H,Q,H,P,P,P,P,R,R,R,R,L,L,L,L,E,D,E,D,A,A,A,A,G,G,G,G,V,V,V,V,STOP,Y,STOP,Y,S,S,S,S,STOP,C,W,C,L,F,L,F".split(',')
         ## Comment this out if not needed
-        print(len(firstLine))
+        print("Here is the length of the first line in the input file")
+        print(str(len(firstLine)) + " (should be 66 for the input file provided (2 fields (site and WT amino acid identity) + 64 codons)")
         for lineText in f:
             line = lineText.split(',')
             
