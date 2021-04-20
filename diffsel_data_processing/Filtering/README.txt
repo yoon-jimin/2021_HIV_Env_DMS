@@ -65,4 +65,4 @@ To run:
 
 #FilteredDiffsel
 
-    This folder contains the final pickout.txt files converted to csv files with column titles. In addition, sites were renumbered so that site 0 from the pickout.txt file matches site 35 in LAI numbering. For those sites where no variants survived the filtering, we added the wildtype mutdiffsel back for downstream data analysis. This step was performed manually.
+    This folder contains the final pickout.txt files converted to csv files with column titles. In addition, sites were renumbered according to HXB2 numbering system. For those sites where no variants survived the filtering, we added the wildtype mutdiffsel back for downstream data analysis. This step was performed manually.
