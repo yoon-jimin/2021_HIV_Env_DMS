@@ -18,7 +18,6 @@ Output
     
     AAcounts ### The pLAI codoncounts file converted to amino acid counts
 
-
 To run:
 	
     python CodonsToAAs.py codoncounts.csv AAcounts.txt
