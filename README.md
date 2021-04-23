@@ -49,7 +49,7 @@ This analysis generates the following output data:
 
 ### 3. Filtering diffsel
 
-This analysis filters diffsel data in order to decipher reliable signal from experimental noise. Briefly, this analysis (1) removes all mutdiffsel values for variants not present in the starting library of the corresponding replicate, and (2) removes mutdiffsel values that are missing in any replicate or that are not of the same sign (positive or negative) across replicates. This analysis is performed by CodonsToAAs.py, FilteringStep1.py, and FilteringStep2.py, which can be found in ./diffsel_data_processing/Filtering
+This analysis filters diffsel data in order to decipher reliable signal from experimental noise. Briefly, this analysis (1) removes mutdiffsel values for variants not present in all three pre-selection replicate viral libraries, and (2) removes mutdiffsel values that exhibit diffsel in opposite directions in any of the biological triplicate. This analysis is performed by CodonsToAAs.py, FilteringStep1.py, and FilteringStep2.py, which can be found in ./diffsel_data_processing/Filtering
 
 Details about the input/output/code can be found in each sub-directory.
 
